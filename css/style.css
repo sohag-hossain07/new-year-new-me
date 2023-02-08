@@ -62,7 +62,7 @@ img {
   width: 100%;
   height: 810px;
   max-height: 100vh;
-  background-image: url("/images/banner/banner1.png");
+  background-image: url("/images/banner/banner3.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -86,7 +86,11 @@ img {
 .banner-title {
   font-size: 65px;
   line-height: 77px;
-  color: #151414;
+  color: #fff;
+}
+
+.banner-description {
+  color: #fff;
 }
 
 .button {
@@ -95,10 +99,11 @@ img {
   font-weight: 600;
   padding: 0.7rem 1.8rem;
   margin-top: 1rem;
-  background-color: #ff5722;
-  border: 1px solid #ff5722;
-  color: #fff;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #005fac;
   border-radius: 5px;
+  cursor: pointer;
 }
 /* header section ends */
 
@@ -162,6 +167,11 @@ img {
   font-size: 30px;
   margin-top: 24px;
 }
+
+.my-plan-text {
+  color: #737272;
+  font-weight: 500;
+}
 /* my plan section ends */
 
 /* contact section starts */
@@ -179,15 +189,76 @@ img {
 
 .contact-button {
   padding: 0.8rem 1.8rem;
-  color: #ff5722;
+  color: #005fac;
   background-color: #fff;
   font-size: 20px;
   font-weight: 600;
-  border: 2px solid rgb(234 234 234);
+  border: 2px solid #005fac;
   margin-top: 24px;
   border-radius: 5px;
 }
 /* contact section ends */
+
+footer {
+  margin-top: 120px;
+  padding: 80px 0;
+  background-color: #151414;
+}
+
+.contact-and-subscription {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.social-info {
+  flex-basis: 70%;
+  max-width: 485px;
+}
+
+.social-info > h2,
+.social-info > p {
+  color: #fff;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-links li {
+  margin: 0 8px;
+}
+
+.social-links li a > img {
+  width: 46px;
+}
+
+.subscription {
+  flex-basis: 30%;
+}
+
+.subscription > h4 {
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: 31px;
+}
+
+input#email {
+  width: 100%;
+  padding: 1rem;
+  background: transparent;
+  border: 1px solid #737272;
+  border-radius: 5px;
+}
+
+.button-blue {
+  font-family: "Inter", sans-serif;
+  border: 1px solid #005fac;
+  background-color: #005fac;
+  color: #fff;
+}
 
 /*
 font-family: 'Inter', sans-serif;
