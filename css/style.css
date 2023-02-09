@@ -29,11 +29,18 @@ section {
   margin-top: 120px;
 }
 
+h2,
+h3 {
+  color: #151414;
+}
+
 h2 {
   font-size: 40px;
   line-height: 47px;
-  font-weight: 700;
-  color: #151414;
+}
+
+h3 {
+  font-size: 30px;
 }
 
 p {
@@ -95,15 +102,19 @@ img {
 
 .button {
   display: inline-block;
+  font-family: "Inter", sans-serif;
   font-size: 1.25rem;
   font-weight: 600;
   padding: 0.7rem 1.8rem;
   margin-top: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-primary {
   background-color: #fff;
   border: 1px solid #fff;
   color: #005fac;
-  border-radius: 5px;
-  cursor: pointer;
 }
 /* header section ends */
 
@@ -132,11 +143,11 @@ img {
   margin-bottom: 24px;
 }
 
-.failures .list-item {
+.failures-list .list-item {
   margin-bottom: 8px;
 }
 
-.failures .list-item i {
+.failures-list .list-item i {
   color: #50dbb4;
   margin-right: 5px;
 }
@@ -169,7 +180,6 @@ img {
 }
 
 .myplan-title {
-  font-size: 30px;
   margin-top: 24px;
 }
 
@@ -197,25 +207,25 @@ img {
   transition: all 200ms;
 }
 
-.image-block {
+.blog-image {
   display: inline-block;
   overflow: hidden;
   border-radius: 15px;
+  object-fit: cover;
 }
 
-.blog-image {
+.blog-image > img {
   display: block;
-  border-radius: 15px;
   transition: all 300ms;
   overflow: hidden;
-  transform: translate(0, 0) scale(1);
-}
-
-.blog-image:hover {
   transform: translate(0, 0) scale(1.1);
 }
 
-.blog:hover .blog-image {
+.blog-image > img:hover {
+  transform: translate(0, 0) scale(1.2);
+}
+
+.blog:hover .blog-image > img {
   transform: scale(1.2);
 }
 
@@ -305,6 +315,7 @@ footer {
 
 .social-links li a > img {
   width: 46px;
+  border-radius: 50%;
 }
 
 .subscription {
@@ -319,6 +330,9 @@ footer {
 
 input#email {
   width: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #fff;
   padding: 1rem;
   background: transparent;
   border: 1px solid #737272;
@@ -326,7 +340,6 @@ input#email {
 }
 
 .button-blue {
-  font-family: "Inter", sans-serif;
   border: 1px solid #005fac;
   background-color: #005fac;
   color: #fff;
