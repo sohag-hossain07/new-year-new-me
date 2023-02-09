@@ -46,7 +46,7 @@ h3 {
 p {
   font-size: 1rem;
   line-height: 26px;
-  margin: 1rem 0;
+  margin: 16px 0;
   color: #444343;
 }
 
@@ -67,8 +67,8 @@ img {
 /* header section starts */
 #header {
   width: 100%;
-  height: 810px;
-  max-height: 100vh;
+  height: 100vh;
+  max-height: 810px;
   background-image: url("/images/banner/banner3.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,16 +76,20 @@ img {
 }
 
 .banner {
-  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.psn-relative {
   width: 100%;
   height: 100%;
 }
 
 .banner-info {
-  position: absolute;
-  top: 50vh;
-  right: 0;
-  transform: translateY(-25vh);
   width: 525px;
   text-align: right;
 }
@@ -106,7 +110,7 @@ img {
   font-size: 1.25rem;
   font-weight: 600;
   padding: 0.7rem 1.8rem;
-  margin-top: 1rem;
+  margin-top: 16px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -333,7 +337,7 @@ input#email {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   color: #fff;
-  padding: 1rem;
+  padding: 16px;
   background: transparent;
   border: 1px solid #737272;
   border-radius: 5px;
@@ -344,8 +348,3 @@ input#email {
   background-color: #005fac;
   color: #fff;
 }
-
-/*
-font-family: 'Inter', sans-serif;
-font-family: 'Work Sans', sans-serif;
-*/
